@@ -1,0 +1,93 @@
+/* RESET    ///////////*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*html,body{ 
+    height: 100%; } */
+
+header {
+    background-color: #1F1F24;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    backface-visibility: hidden;
+}
+
+header .logo {
+    float: left;
+}
+
+header a:visited {
+    color: #fff;
+}
+
+header a:visited {
+    color: #fff;
+}
+
+header a:hover {
+    color: #de6751;
+}
+
+header a:active {
+    color: #de6751;
+}
+
+nav ul li {
+    display: table-cell;
+    height: 56px;
+    vertical-align: middle;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    line-height: 17px;
+    margin: 0 35px;
+    text-transform: uppercase;
+}
+
+body {
+    background: #fff;
+    color: #242021;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    min-width: 980px;
+}
+
+.menu-principal {
+    float: left;
+}
+
+li {
+    list-style: none;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
